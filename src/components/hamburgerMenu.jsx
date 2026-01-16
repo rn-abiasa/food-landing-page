@@ -1,15 +1,19 @@
 const links = [
   {
     label: "Home",
-    url: "",
+    url: "/",
   },
   {
     label: "About",
-    url: "",
+    url: "#about",
+  },
+  {
+    label: "Menu",
+    url: "#menu",
   },
   {
     label: "Sevices",
-    url: "",
+    url: "#services",
   },
   {
     label: "Contacts",
@@ -20,7 +24,7 @@ const links = [
 const HamburgerMenu = () => {
   return (
     <>
-      <div className="fixed top-26 right-5 bg-gray-100 w-40 rounded-xl flex flex-col gap-5 p-5">
+      <div className="fixed top-20 right-5 bg-gray-100 w-40 rounded-xl flex flex-col gap-5 p-5">
         {links.map((link) => (
           <a href={link.url} className="text-sm font-normal text-black/50">
             {link.label}

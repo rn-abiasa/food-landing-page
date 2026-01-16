@@ -5,23 +5,20 @@ import HamburgerMenu from "./hamburgerMenu";
 const links = [
   {
     label: "Home",
-    url: "",
+    url: "/",
   },
   {
     label: "About",
-    url: "",
+    url: "#about",
   },
   {
     label: "Menu",
-    url: "",
+    url: "#menu",
   },
-  {
-    label: "Chefs",
-    url: "",
-  },
+
   {
     label: "Services",
-    url: "",
+    url: "#services",
   },
   {
     label: "Contacts",

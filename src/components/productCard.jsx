@@ -4,7 +4,7 @@ const ProductCard = ({ name, description, price, link, image }) => {
       <div className="w-52">
         <div
           style={{ backgroundImage: `url(${image})` }}
-          className="bg-cover bg-center h-52 w-52"
+          className="bg-cover bg-center h-52 w-52 hover:scale-105 transition-all duration-300"
         ></div>
         <p className="text-base font-semibold mt-3">{name}</p>
         <p className="text-sm font-normal text-black/50 mt-2">{description}</p>

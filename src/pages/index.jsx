@@ -17,7 +17,7 @@ const Index = () => {
       <Navbar />
       <main className="px-5 mb-26 mt-16 sm:px-16 lg:px-32 xl:px-52">
         <section>
-          <div className="md:flex md:flex-row-reverse md:justify-center md:items-center md:gap-10">
+          <div className="md:flex md:flex-row-reverse md:justify-center md:items-center md:gap-32">
             <div className="">
               <p className="text-base font-semibold">Healty & Tasty</p>
               <h1 className="text-4xl font-bold text-orange-500">
@@ -25,7 +25,7 @@ const Index = () => {
                 <br></br>
                 with love!
               </h1>
-              <p className="text-sm font-normal text-black/50 mt-7 mb-10">
+              <p className="text-sm font-normal text-black/50 mt-7 mb-10 max-w-80">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
@@ -40,7 +40,7 @@ const Index = () => {
             <img src="/Vector.png" alt="" className="mt-10 md:h-80" />
           </div>
         </section>
-        <section className="mt-26">
+        <section id="services" className="mt-26">
           <HeaderSection
             title="The healthiest way to start your day."
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -63,7 +63,10 @@ const Index = () => {
             />
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center mt-26 md:flex-row md:justify-center md:items-center md:gap-10">
+        <section
+          id="about"
+          className="flex flex-col justify-center items-center mt-26 md:flex-row md:justify-center md:items-center md:gap-32"
+        >
           <img src="/Vector.png" alt="" className="h-60 w-60" />
           <div className="mt-10 md:max-w-70">
             <h2 className="text-3xl font-bold text-orange-500">
@@ -73,10 +76,14 @@ const Index = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
+            <p className="text-sm font-normal text-black/50 mt-10 mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
             <Button>Book a Table</Button>
           </div>
         </section>
-        <section className="mt-26">
+        <section id="menu" className="mt-26">
           <HeaderSection
             title="Top item's we have"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -112,7 +119,7 @@ const Index = () => {
             />
           </div>
         </section>
-        <section className="mt-26 mb-26">
+        <section id="reviews" className="mt-26 mb-26">
           <HeaderSection
             className="flex flex-col justify-center items-center"
             title="Our Customers"
