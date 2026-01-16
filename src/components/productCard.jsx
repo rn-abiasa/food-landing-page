@@ -17,7 +17,7 @@ const ProductCard = ({ name, description, price, link, image }) => {
           </p>
           <a
             href={link}
-            className="border-2 border-orange-500 rounded-full px-3 py-2 text-sm text-orange-500"
+            className="border-2 border-orange-500 rounded-full px-3 py-2 text-sm text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
           >
             Buy Now
           </a>

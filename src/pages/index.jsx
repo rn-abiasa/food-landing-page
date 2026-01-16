@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="px-5 mb-26 mt-16 sm:px-16">
+      <main className="px-5 mb-26 mt-16 sm:px-16 lg:px-32 xl:px-52">
         <section>
           <div className="md:flex md:flex-row-reverse md:justify-center md:items-center md:gap-10">
             <div className="">
@@ -29,7 +29,13 @@ const Index = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-              <Button>Book a Table</Button>
+              <Button
+                onClick={() =>
+                  (window.location.href = "https://wa.me/6285936391713")
+                }
+              >
+                Book a Table
+              </Button>
             </div>
             <img src="/Vector.png" alt="" className="mt-10 md:h-80" />
           </div>

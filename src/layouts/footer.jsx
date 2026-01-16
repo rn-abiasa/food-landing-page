@@ -27,7 +27,10 @@ const FooterItem = ({ title, links }) => {
         <p className="text-sm font-semibold text-white mb-5">{title}</p>
         <div className="flex flex-col gap-3">
           {links.map((link) => (
-            <a href={link.url} className="text-sm font-normal text-white/50">
+            <a
+              href={link.url}
+              className="text-sm font-normal text-white/50 hover:text-orange-500 hover:font-semibold transition-all duration-300"
+            >
               {link.label}
             </a>
           ))}
@@ -40,7 +43,7 @@ const FooterItem = ({ title, links }) => {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black px-5 py-10 sm:px-16 md:flex md:justify-between md:items-center">
+      <footer className="bg-black px-5 py-10 sm:px-16 md:flex md:justify-between md:items-center lg:px-32 xl:px-52">
         <div className="">
           <h3 className="text-2xl font-bold text-white">Logo</h3>
           <p className="text-sm font-normal text-white/50 max-w-70 mt-2">
