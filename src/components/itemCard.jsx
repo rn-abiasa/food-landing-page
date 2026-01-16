@@ -3,7 +3,7 @@ const ItemCard = ({ icon, name, description }) => {
     <>
       <div>
         {icon}
-        <p className="text-base font-semibold mt-5">{name}</p>
+        <p className="text-base font-semibold mt-3">{name}</p>
         <p className="text-sm font-normal text-black/50 max-w-70 mt-2">
           {description}
         </p>
