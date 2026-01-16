@@ -15,10 +15,10 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="px-5 mb-26">
+      <main className="px-5 mb-26 mt-16 sm:px-16">
         <section>
-          <div>
-            <div>
+          <div className="md:flex md:flex-row-reverse md:justify-center md:items-center md:gap-10">
+            <div className="">
               <p className="text-base font-semibold">Healty & Tasty</p>
               <h1 className="text-4xl font-bold text-orange-500">
                 Food made
@@ -31,7 +31,7 @@ const Index = () => {
               </p>
               <Button>Book a Table</Button>
             </div>
-            <img src="/Vector.png" alt="" className="mt-10" />
+            <img src="/Vector.png" alt="" className="mt-10 md:h-80" />
           </div>
         </section>
         <section className="mt-26">
@@ -39,7 +39,7 @@ const Index = () => {
             title="The healthiest way to start your day."
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
-          <div className="flex flex-col gap-10 mt-12">
+          <div className="flex flex-col gap-10 mt-12 md:flex-row">
             <ItemCard
               icon={<Soup size={50} className="text-orange-500" />}
               name="Healty and Tasty Food"
@@ -57,9 +57,9 @@ const Index = () => {
             />
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center mt-26">
+        <section className="flex flex-col justify-center items-center mt-26 md:flex-row md:justify-center md:items-center md:gap-10">
           <img src="/Vector.png" alt="" className="h-60 w-60" />
-          <div className="mt-10">
+          <div className="mt-10 md:max-w-70">
             <h2 className="text-3xl font-bold text-orange-500">
               Find the best healty food from us
             </h2>
@@ -113,8 +113,13 @@ const Index = () => {
             description="Lorem ipsum dolor sit amet, consectetur"
           />
           <div className="mt-12">
-            <Swiper autoplay={{ delay: 3000 }} modules={[Autoplay]}>
-              <SwiperSlide>
+            <Swiper
+              autoplay={{ delay: 3000 }}
+              slidesPerView={1}
+              centeredSlides={true}
+              modules={[Autoplay]}
+            >
+              <SwiperSlide className="flex justify-center">
                 <Review
                   name="Lorem ipsum"
                   prophecy="Student"
@@ -122,7 +127,7 @@ const Index = () => {
                   image="/Vector.png"
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="flex justify-center items-center">
                 <Review
                   name="Lorem ipsum"
                   prophecy="Student"
@@ -130,7 +135,7 @@ const Index = () => {
                   image="/Vector.png"
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="flex justify-center items-center">
                 <Review
                   name="Lorem ipsum"
                   prophecy="Student"

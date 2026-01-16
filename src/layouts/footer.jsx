@@ -40,8 +40,8 @@ const FooterItem = ({ title, links }) => {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black px-5 py-10">
-        <div>
+      <footer className="bg-black px-5 py-10 sm:px-16 md:flex md:justify-between md:items-center">
+        <div className="">
           <h3 className="text-2xl font-bold text-white">Logo</h3>
           <p className="text-sm font-normal text-white/50 max-w-70 mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -58,15 +58,15 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-10 mt-12">
+        <div className="grid grid-cols-2 gap-10 mt-12 md:grid-cols-4 md:mt-0">
           <FooterItem title="Links" links={links} />
           <FooterItem title="Links" links={links} />
           <FooterItem title="Links" links={links} />
           <FooterItem title="Links" links={links} />
+          <p className="text-xs font-normal text-white/50">
+            2026 Abiasa All Rights Reserved.
+          </p>
         </div>
-        <p className="text-xs font-normal text-white/50 mt-12">
-          2026 Abiasa All Rights Reserved.
-        </p>
       </footer>
     </>
   );

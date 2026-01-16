@@ -1,7 +1,7 @@
 const Review = ({ name, prophecy, content, image }) => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-90">
         <p className="text-base font-medium text-black/50 text-center">
           {content}
         </p>
