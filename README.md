@@ -88,9 +88,9 @@ src/
 
 ## 📸 Screenshots
 
-| Hero Section |            Popular Items            |
-| :----------: | :---------------------------------: |
-|    !Hero     | _Tambahkan screenshot menu di sini_ |
+| Hero Section | Popular Items |
+| :----------: | :-----------: |
+|    !Hero     |       -       |
 
 ---
 
